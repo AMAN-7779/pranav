@@ -51,11 +51,11 @@ async function seed() {
           email: 'demo@einfo.me',
           name: 'Demo User',
           username: 'demo-user',
-          profilePicture: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+          avatarUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
           profile: {
             create: {
               bio: 'This is a demo user account created during database seeding. Feel free to explore the features!',
-              title: 'Full Stack Developer',
+              jobTitle: 'Full Stack Developer',
               location: 'Demo City, Demo Country',
               website: 'https://demo.einfo.me',
               showLinks: true,
@@ -90,7 +90,7 @@ async function seed() {
               }
             ]
           },
-          workExperiences: {
+          experiences: {
             create: [
               {
                 company: 'Demo Tech Company',
@@ -133,7 +133,7 @@ async function seed() {
               {
                 institution: 'Demo University',
                 degree: 'Bachelor of Science',
-                fieldOfStudy: 'Computer Science',
+                description: 'Computer Science',
                 startDate: new Date('2016-09-01'),
                 endDate: new Date('2020-05-01'),
                 location: 'Demo City, Demo State',
@@ -159,7 +159,7 @@ async function seed() {
               }
             ]
           },
-          portfolioProjects: {
+          portfolio: {
             create: [
               {
                 title: 'E-Commerce Platform',
